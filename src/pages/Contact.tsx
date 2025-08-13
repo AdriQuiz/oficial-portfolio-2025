@@ -1,7 +1,8 @@
 'use client'
 import Title from '@/components/Title';
 import React from 'react'
-import Swal from 'sweetalert2';
+import { Fade } from 'react-awesome-reveal';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -9,7 +10,7 @@ const Contact = () => {
         const formData = new FormData(event.target as HTMLFormElement);
 
         // honeypot
-        if(formData.get("website")) {
+        if (formData.get("website")) {
             return;
         }
 
@@ -28,48 +29,49 @@ const Contact = () => {
         }).then((res) => res.json());
 
         if (res.success) {
-            Swal.fire({
-                title: "Sucess!",
-                text: "Your message was sent to me successfully!",
-                icon: "success"
-            });
+            toast.success("Success!")
+        } else {
+            toast.error("Whoops! Try again.")
         }
     };
+
     return (
-        <section id='contact' className='flex justify-center items-center min-h-[100vh] py-20'>
-            <div className='container max-w-7xl'>
-                <Title title='Get In Touch' />
-                <div className='flex justify-center'>
-                    <form onSubmit={onSubmit} className='md:max-w-[600px] w-full bg-dark-grey md:p-10 p-5 rounded-xl text-white md:my-5 md:mx-10'>
-                        <div className='flex justify-center'>
-                            <h2 className='inline-block font-bold text-2xl mb-3
+        <Fade direction='up' triggerOnce={true}>
+            <section id='contact' className='flex justify-center items-center min-h-[100vh] py-20'>
+                <div className='container max-w-7xl'>
+                    <Title title='Get In Touch' />
+                    <div className='flex justify-center'>
+                        <form onSubmit={onSubmit} className='md:max-w-[600px] w-full bg-dark-grey md:p-10 p-5 rounded-xl text-white md:my-5 md:mx-10'>
+                            <div className='flex justify-center'>
+                                <h2 className='inline-block font-bold text-2xl mb-3
                             bg-gradient-to-r from-pink to-white text-transparent bg-clip-text'>
-                                Contact me</h2>
-                        </div>
-                        <p className='font-thin text-center mb-4'>Have a question or project in mind? I&apos;d love to hear from you!</p>
-                        <div className='mt-5 mb-5'>
-                            <label className='inline-block mb-3'>Name</label>
-                            <input type="text" name='name' className='w-full h-12 bg-transparent border rounded-lg p-3'
-                                placeholder='John' required />
-                        </div>
-                        <div className='mb-5'>
-                            <label className='inline-block mb-3'>E-mail</label>
-                            <input type="text" name='email' className='w-full h-12 bg-transparent border rounded-lg p-3'
-                                placeholder='john@gmail.com' required />
-                        </div>
-                        <div className='mb-5'>
-                            <label className='inline-block mb-3'>Your message</label>
-                            <textarea name='message' placeholder='Let me know what you think...' className='w-full h-[200px] resize-none bg-transparent border rounded-lg p-3' required></textarea>
-                        </div>
-                        <input type="text" name="website" className="hidden" autoComplete="off" />
-                        <button className='w-full h-12 bg-gradient-to-r from-pink via-purple to-dark-blue
-                        text-white rounded-lg font-semibold' type='submit'>
-                            Send message
-                        </button>
-                    </form>
+                                    Contact me</h2>
+                            </div>
+                            <p className='font-thin text-center mb-4'>Have a question or project in mind? I&apos;d love to hear from you!</p>
+                            <div className='mt-5 mb-5'>
+                                <label className='inline-block mb-3'>Name</label>
+                                <input type="text" name='name' className='w-full h-12 bg-transparent border rounded-lg p-3'
+                                    placeholder='John' required />
+                            </div>
+                            <div className='mb-5'>
+                                <label className='inline-block mb-3'>E-mail</label>
+                                <input type="text" name='email' className='w-full h-12 bg-transparent border rounded-lg p-3'
+                                    placeholder='john@gmail.com' required />
+                            </div>
+                            <div className='mb-5'>
+                                <label className='inline-block mb-3'>Your message</label>
+                                <textarea name='message' placeholder='Let me know what you think...' className='w-full h-[200px] resize-none bg-transparent border rounded-lg p-3' required></textarea>
+                            </div>
+                            <input type="text" name="website" className="hidden" autoComplete="off" />
+                            <button className='w-full h-12 bg-gradient-to-r from-pink via-purple to-dark-blue
+                                text-white rounded-lg font-semibold' type='submit'>
+                                Send message
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Fade>
     )
 }
 

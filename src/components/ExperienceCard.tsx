@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export type CardType = {
     title: string,
@@ -10,10 +11,21 @@ export type CardType = {
 }
 
 const ExperienceCard = (
-    {title, company, date, tools, texts, classes}: CardType
+    { title, company, date, tools, texts, classes }: CardType
 ) => {
     return (
-        <div className={`w-full lg:w-3/4 border py-6 px-3 md:px-12 rounded-xl ${classes}`}>
+        <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{
+                opacity: 1, scale: 1, transition: {
+                    duration: 0.8,
+                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.3 }
+                }
+            }}
+            viewport={{
+                once: true
+            }}
+            className={`w-full lg:w-3/4 border py-6 px-3 md:px-12 rounded-xl ${classes}`}>
             <h2 className='text-2xl text-center mb-4'>
                 <span className='bg-gradient-to-r from-pink to-white text-transparent bg-clip-text'>{title}{" "}&bull;{" "}{company}</span>
             </h2>
@@ -33,7 +45,7 @@ const ExperienceCard = (
                     <li key={item} className='font-thin mb-4'>{item}</li>
                 ))}
             </ul>
-        </div>
+        </motion.div>
     )
 }
 

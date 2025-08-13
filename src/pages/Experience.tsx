@@ -1,3 +1,4 @@
+'use client'
 import ExperienceCard from '@/components/ExperienceCard'
 import Title from '@/components/Title'
 import React from 'react'
