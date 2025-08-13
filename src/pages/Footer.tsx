@@ -4,11 +4,10 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <footer className='py-24'>
+        <footer className='pt-24 pb-10'>
             <div className='container max-w-7xl'>
-                <div className='flex items-center justify-between'>
-                    <small>&copy; 2025 | Designed & Coded by Adriana Quiroz. All rights reserved.</small>
-                    <div className='flex gap-3'>
+                <div className='flex flex-col md:flex-row items-center justify-between'>
+                    <div className='flex gap-3 mb-6 md:mb-0'>
                         <Link href="https://www.linkedin.com/in/adriana-christina-quiroz-correa-7b34082a1/"
                             className='border rounded-full h-[40px] w-[40px] 
                             flex items-center justify-center' target='_blank' rel='noopener noreferrer'>
@@ -20,6 +19,7 @@ const Footer = () => {
                             <FaGithub />
                         </Link>
                     </div>
+                    <small className='text-center md:text-end'>&copy; 2025 | Designed & Coded by Adriana Quiroz. All rights reserved.</small>
                 </div>
             </div>
         </footer>

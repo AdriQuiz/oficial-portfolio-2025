@@ -35,7 +35,7 @@ const Contact = () => {
             <div className='container max-w-7xl'>
                 <Title title='Get In Touch' />
                 <div className='flex justify-center'>
-                    <form onSubmit={onSubmit} className='max-w-[600px] w-full bg-dark-grey p-10 rounded-xl text-white my-5 mx-10'>
+                    <form onSubmit={onSubmit} className='md:max-w-[600px] w-full bg-dark-grey md:p-10 p-5 rounded-xl text-white md:my-5 md:mx-10'>
                         <div className='flex justify-center'>
                             <h2 className='inline-block font-bold text-2xl mb-3
                             bg-gradient-to-r from-pink to-white text-transparent bg-clip-text'>
