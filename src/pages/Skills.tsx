@@ -8,8 +8,8 @@ const Skills = () => {
             <div className='container max-w-7xl'>
                 <Title title='Skills' />
                 <p className='font-thin text-center mb-7'>
-                    This list contains all the technologies I typically use to build
-                    efficient software and web solutions!
+                    This list contains all the technologies I typically use to bring life to
+                    outstanding websites!
                 </p>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-16'>
                     <div id='frontend' className='w-full'>

@@ -8,6 +8,11 @@ const Contact = () => {
         event.preventDefault();
         const formData = new FormData(event.target as HTMLFormElement);
 
+        // honeypot
+        if(formData.get("website")) {
+            return;
+        }
+
         formData.append("access_key", "52b7ddf3-2fd4-47d9-933d-3218c6bad80b");
 
         const object = Object.fromEntries(formData);
@@ -56,6 +61,7 @@ const Contact = () => {
                             <label className='inline-block mb-3'>Your message</label>
                             <textarea name='message' placeholder='Let me know what you think...' className='w-full h-[200px] resize-none bg-transparent border rounded-lg p-3' required></textarea>
                         </div>
+                        <input type="text" name="website" className="hidden" autoComplete="off" />
                         <button className='w-full h-12 bg-gradient-to-r from-pink via-purple to-dark-blue
                         text-white rounded-lg font-semibold' type='submit'>
                             Send message
