@@ -32,7 +32,7 @@ const Card = (
                 </div>
                 <p className='font-thin'>{description}</p>
             </div>
-            <div className='flex gap-4 px-8 mb-5 md:mb-0'>
+            <div className='flex gap-4 px-8 mb-5'>
                 {github && (
                     <Link href={github} target='_blank' rel="noopener noreferrer"
                         className='flex items-center gap-2 w-fit px-4 py-2 rounded-full

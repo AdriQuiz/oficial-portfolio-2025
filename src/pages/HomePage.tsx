@@ -36,8 +36,8 @@ const HomePage = () => {
                 <Button variant='secondary' href='/CV_Adriana_Quiroz_eng.pdf' download={true}>Download CV</Button>
                 <Link href="https://www.linkedin.com/in/adriana-christina-quiroz-correa-7b34082a1/"
                   className='border rounded-full h-[40px] w-[40px] 
-                flex items-center justify-center' target='_blank' rel='noopener noreferrer'>
-                  <FaLinkedinIn />
+                  flex items-center justify-center' target='_blank' rel='noopener noreferrer'>
+                    <FaLinkedinIn />
                 </Link>
                 <Link href="https://github.com/AdriQuiz"
                   className='border rounded-full h-[40px] w-[40px] 

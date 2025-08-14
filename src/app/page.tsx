@@ -11,15 +11,15 @@ export default function Home() {
     <>
       <Navbar />
       <HomePage />
-      <hr className="w-3/4 mx-auto" />
+      <hr className="w-3/4 mx-auto border-white/60" />
       <Skills />
-      <hr className="w-3/4 mx-auto" />
+      <hr className="w-3/4 mx-auto border-white/60" />
       <Experience />
-      <hr className="w-3/4 mx-auto" />
+      <hr className="w-3/4 mx-auto border-white/60" />
       <Projects />
-      <hr className="w-3/4 mx-auto" />
+      <hr className="w-3/4 mx-auto border-white/60" />
       <Contact />
-      <hr className="w-3/4 mx-auto" />
+      <hr className="w-3/4 mx-auto border-white/60" />
       <Footer />
     </>
   );

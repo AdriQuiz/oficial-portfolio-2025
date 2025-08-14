@@ -37,8 +37,10 @@ const Projects = () => {
           <Card
             title='Adriana&apos;s Portfolio'
             tools={['NextJS', 'ReactJS','Tailwind CSS', 'Framer Motion']}
-            description='The portfolio you&apos;re exploring right now! It&apos;s a modern and smooth design to showcase my skills as a Junior Front-End Developer.'
+            description='The portfolio you&apos;re exploring right now! It&apos;s a modern and smooth design to 
+            showcase my skills as a Junior Front-End Developer, which uses framer motion effects and gradients I like.'
             img={mock_port}
+            github='https://github.com/AdriQuiz/oficial-portfolio-2025'
           />
         </div>
       </div>
