@@ -33,6 +33,7 @@ const Projects = () => {
             tools={['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS', 'Tailwind CSS']}
             description='Notes app that helps manage daily tasks, such as creating, displaying, updating and deleting notes.'
             img={mock_note}
+            github='https://github.com/AdriQuiz/mote-app-notes'
           />
           <Card
             title='Adriana&apos;s Portfolio'
