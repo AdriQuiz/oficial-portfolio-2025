@@ -36,7 +36,7 @@ const Contact = () => {
     };
 
     return (
-        <Fade direction='up' triggerOnce={true}>
+        <Fade direction='up' duration={2000} triggerOnce={true}>
             <section id='contact' className='flex justify-center items-center min-h-[100vh] py-20'>
                 <div className='container max-w-7xl'>
                     <Title title='Get In Touch' />
