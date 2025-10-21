@@ -17,7 +17,7 @@ const Projects = () => {
             title='Conversational Assistant implemented with Graph RAG Hybrid Search &bull; Thesis Project'
             tools={['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS', 'Tailwind CSS', 'FastAPI', 'Neo4j', 'LangChain']}
             description='Thesis project for the Cathedral Museum of the Metropolitan Cathedral of Santa Cruz, Bolivia, 
-              which features a conversational assistant that answers questions reltated to the museum&apos;s artworks.'
+              which features a conversational assistant that answers questions related to the museum&apos;s artworks.'
             img={mock_grade}
           />
           <Card
