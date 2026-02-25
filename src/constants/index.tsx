@@ -27,10 +27,10 @@ export const frontStack = [
 export const backStack = [
     { id: '0', name: 'Laravel', icon: <FaLaravel className='size-14' />},
     { id: '1', name: 'Express.js', icon: <SiExpress className='size-14' />},
-    { id: '2', name: 'Node.js', icon: <FaNodeJs className='size-14' />},
+    { id: '2', name: 'Nest JS', icon: <SiNestjs className='size-14' />},
+    { id: '3', name: 'Node.js', icon: <FaNodeJs className='size-14' />},
     { id: '4', name: 'TypeScript', icon: <SiTypescript className='size-14' />},
     { id: '5', name: 'Git', icon: <FaGitAlt className='size-14' />},
-    { id: '6', name: 'Nest JS', icon: <SiNestjs className='size-14' />}
 ];
 
 export const databases = [
