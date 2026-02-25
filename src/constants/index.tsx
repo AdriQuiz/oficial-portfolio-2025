@@ -1,6 +1,6 @@
 import { FaBootstrap, FaCss3Alt, FaGitAlt, FaHtml5, FaLaravel, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiExpress, SiFirebase, SiJavascript, 
-    SiMongodb, SiMysql, SiNeo4J, SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
+    SiMongodb, SiMysql, SiNeo4J, SiNestjs, SiNextdotjs, SiNuxtdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
 import { FaFlutter } from 'react-icons/fa6';
 
 export const navLinks = [
@@ -21,6 +21,7 @@ export const frontStack = [
     { id: '6', name: 'CSS', icon: <FaCss3Alt className='size-14' />},
     { id: '7', name: 'JavaScript', icon: <SiJavascript className='size-14' />},
     { id: '8', name: 'TypeScript', icon: <SiTypescript className='size-14' />},
+    { id: '9', name: 'Nuxt', icon: <SiNuxtdotjs className='size-14' />},
 ];
 
 export const backStack = [
@@ -28,7 +29,8 @@ export const backStack = [
     { id: '1', name: 'Express.js', icon: <SiExpress className='size-14' />},
     { id: '2', name: 'Node.js', icon: <FaNodeJs className='size-14' />},
     { id: '4', name: 'TypeScript', icon: <SiTypescript className='size-14' />},
-    { id: '5', name: 'Git', icon: <FaGitAlt className='size-14' />}
+    { id: '5', name: 'Git', icon: <FaGitAlt className='size-14' />},
+    { id: '6', name: 'Nest JS', icon: <SiNestjs className='size-14' />}
 ];
 
 export const databases = [

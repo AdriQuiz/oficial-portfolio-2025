@@ -10,6 +10,19 @@ const Experience = () => {
                 <Title title='Experience' />
                 <div className='flex flex-col items-center'>
                     <ExperienceCard
+                        title='Software Engineer - Intern'
+                        company='Mobi LATAM'
+                        date='Nov 2025 - Feb 2025'
+                        classes='mb-12'
+                        tools={['Nuxt', 'Vue', 'Nest JS', 'Tailwind CSS', 'MongoDB']}
+                        texts={[
+                            'Built and improved core features of the company dashboard used for internal operations.',
+                            'Developed UI modules for clients, payment reporting, and rider management systems.',
+                            'Assisted in full-stack development for the mobile application and participated in bug tracking and fixes. ',
+                            'Applied clean code practices, SOLID principles, and software architecture fundamentals.',
+                        ]}
+                    />
+                    <ExperienceCard
                         title='Front-End Developer - Intern'
                         company='trabajito'
                         date='Mar 2024 - Oct 2024'
